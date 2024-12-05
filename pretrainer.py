@@ -11,7 +11,7 @@ input_dim = sequence_length * num_features
 hidden_dim = 16
 latent_dim = 8
 
-print('input_dim size:', input_dim)
+print('input dim size:', input_dim)
 
 encoder = TimeSeriesEncoder(input_dim, hidden_dim, latent_dim)
 optimizer = torch.optim.Adam(encoder.parameters(), lr=0.001)
