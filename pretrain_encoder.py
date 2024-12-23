@@ -30,8 +30,6 @@ def pretrain_contrastive(encoder, data_loader, optimizer, epochs=10):
         avg_epoch_loss = epoch_loss / len(data_loader)
         loss_history.append(avg_epoch_loss)
 
-        # print(f'Epoch {epoch + 1}, Loss: {epoch_loss / len(data_loader)}')
-
         print(f'Epoch {epoch + 1}, Loss: {avg_epoch_loss}')
 
     return loss_history
